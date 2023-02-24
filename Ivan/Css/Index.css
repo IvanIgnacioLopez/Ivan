@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background:lightblue ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;    
+} 
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #FCFFFD;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contenedor .lado_izquierdo {
+position: relative;
+    background:#1B4965 ;
+    padding: 40px;
+} 
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid grey;
+}
+
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #FCFFFD;
+    font-size: 1.5em;
+    margin-top: 20 px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.contactInfo{
+    padding-top: 20px;
+}
+
+.title{
+    color: #FCFFFD;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 20px;
+    font-size: 18px;
+    color:cyan;
+}
+
+.contactInfo ul li span{
+    color: #FCFFFD;
+    font-weight: 300;
+}
+
+.contactInfo.educacion li{
+    margin-bottom: 15px;
+}
+
+.contactInfo.educacion h5{
+    color: cyan;
+    font-weight: 500;
+}
+
+.contactInfo.educacion h4{
+    color: #FCFFFD;    ;
+   font-weight: 300;
+}
+
+.contactInfo.educacion h4:nth-child(2){
+    color: #FCFFFD;    ;
+   font-weight: 500;
+}
+
+
+.contactInfo.idioma .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #4F759B;
+    display: block;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.contactInfo.idioma .porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: cyan;
+    border-radius: 6px;
+}
+
+.contenedor .lado_derecho {
+    position: relative;
+    background:#FCFFFD ;
+    padding: 40px;
+} 
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #1B4965;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: grey;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .año_empresa{
+    min-width: 150px;
+}
+
+.about .box .año_empresa h5{
+    color: grey;
+    font-weight: 600;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #4F759B;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    text-align: center;
+    color: grey;
+    font-weight: 500;
+}
+
+.skills .box .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgba(241, 241, 241, 0.966);
+    border-radius: 8px;
+}
+
+.skills .box .porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #1B4965;
+    border-radius: 8px;
+}
+
+@media (max-width:1000px){
+    .contenedor {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
